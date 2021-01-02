@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+
+           let grades = {'kidong': 10, 'sanghyo': 6, 'ilsun': 80};
+            for(let name in grades) {
+                document.write("<li>key : "+name+" value : "+grades[name]+"</li>");
+            } 
+          
+
+            // grades['kidong'] > 10 value값이 나옴
+            // HTML 사용으로 리스트 만들기
+
+            // 배열에서도 사용 가능한 for in
+
+            let arr = ['a', 'b', 'c'];
+
+            for(let name in arr) {
+                document.write(name);
+                document.write(arr[name]);
+            }
+        </script>
+    </body>
+</html>

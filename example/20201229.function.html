@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script type="text/javascript">
+          
+          // 함수 사용 간단한 예제
+          function numbering() {
+              document.write(1) ;
+          }
+          numbering () ;
+          numbering () ;
+          numbering () ;
+          numbering () ;
+
+            // numbering 함수의 값 1이 4번 출력됨
+            // 재사용성이 좋기 때문에 사용
+
+           // 함수 예제 2
+           
+           function numbering2() {
+               for(i = 0 ; i < 10 ; i++)
+                document.write(i) ;
+           }
+           numbering2() ;
+           numbering2() ;
+           numbering2() ;
+           numbering2() ;
+
+            // 위 예제와 같이 복잡한 코드를 재사용하기 좋음
+
+           // 함수 예제 2번을 100번 실행해야할 때 함수 사용
+           function numbering() {
+               var i = 0;
+               while(i < 20){
+                   document.write(i+"<br />");
+                   i = i + 1;
+               }
+           }
+           for(var i = 0; i < 1000; i++) {
+                numbering();
+           }
+
+           function getmenber1() {
+               return 'kidong' ;
+           }
+           function getmenber2() {
+               return 'sanghyo' ;
+           }
+
+           alert(getmenber1());
+           alert(getmenber2());
+        </script>
+    </body>
+</html>

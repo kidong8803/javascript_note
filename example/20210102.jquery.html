@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script type="text/javascript" src="20210102.jquery.js"></script>
+    </head>
+    <body>
+        <ul id="list">
+            <li>empty</li>
+            <li>empty</li>
+            <li>empty</li>
+            <li>empty</li>
+       </ul> 
+       <input type="button" value="execute" id="execute_btn" /> <!--버튼을 만드는 태그-->
+
+        <script type="text/javascript">
+          $('#execute_btn').click(function(){
+            $('#list li').text('codinig everyboby'); 
+          })  
+           // 버튼을 눌렀을 때 텍스트가 바뀌도록 코딩 
+           // jquery는 $로 시작
+           // #list li > list안에 li 태그
+           // .text(안녕) 안녕으로 바꾸세요
+        </script>
+        
+    </body>
+</html>
