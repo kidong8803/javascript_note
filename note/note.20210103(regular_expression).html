@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+            // <정규표현식>
+            // 문자열에서 특정한 문자를 찾아내는 도구
+            // 수십줄이 필요한 작업을 한줄로 끝낼 수 있음
+            // 정규표현식은 하나의 언어라고 볼 수 있음
+            // 정보와 관련된 일을 처리할 때 매우 중요함
+            
+
+            // <패턴 만들기>
+            // 컴파일 >> 실행
+            // 컴파일 : 패턴을 찾는것
+
+            // var pattern = /a/; > a는 우리가 찾고자하는 대상
+            // var pattern = new RegExp('a'); > 위와 결과는 동일
+            // 추출, test, 치환을 할 때 사용함
+            // var pattern = /a/;
+            // pattern.exec('abcde'); > ["a"] exec 배열로 리턴함
+            // 여기서 /a./ 으로 바꾸면 > ["ab"] . 은 어떠한 문자
+            
+            //테스트
+            // var pattern = /a/;
+            // pattern.test('abcde'); > true 리턴값이 boolean 없을 시 false
+            
+
+            //추출
+            /* var pattern = /a/;
+                var str = 'abcdef';
+                    str.match(pattern);
+                        결과값은 ["a"] */
+            // 배열이 리턴됨
+            
+
+            //치환
+            /*  var patter = /a/;)
+                var str = 'abcde';
+                    str.replace(pattern, 'A')  패턴을 'A'로 치환
+                        결과값은 'Abcde' */
+
+            // <정규표현식 옵션>
+
+            // i 를 붙이면 대소문자를 구분하지 않는다
+
+            // var xi = /a/;
+            // "Abcde".match(xi); >> null
+
+            // var oi = /a/i;
+            //"Abcde".match(oi); >> ["A"]
+
+            // g는 검색된 모든 결과를 리턴한다 (중복된 결과까지)
+
+            // var xg = /a/;
+            // "abcda".match(xg); >> ["a"]
+
+            // var og = /a/g;
+            // "abcda".match(og); >> ["a", "a"]
+
+            // var ig = /a/ig;
+            // "AabcdAa".match(ig) >> ["A", "a", "A", "a"]
+                        
+            // <캡처>
+            // (\W+)\S(\W+)
+
+            // ()는 그룹
+            // \W 문자를 의미 , A-Z, a-z, 0~9까지
+            // + 는 수량자, 앞에 있는 문자가 하나 이상일 경우 / 앞에 #등이 올 경우 해당 안됨
+            
+            // \S는 공백을 의미함 white_space
+            // ex) coding everybody > 위 패턴과 일치
+
+            // $2는 위 그룹에서 2번째 그룹을 의미함 ($1은 첫번째 그룹)
+            
+            /* var pattern = /(\W)\S(\W)/;
+                var str = "coding everybody";
+                var result = str.replace(pattern, "$2, $1");
+
+                >> everybody, coding */
+
+            
+            // 치환
+            // 예제 확인
+
+
+        </script>
+    </body>
+</html> 

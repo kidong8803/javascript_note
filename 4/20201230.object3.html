@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            let grades = {
+                'list' : {'kidong': 10, 'sanghyo': 6, 'ilsun': 80},  // 객체 안의 객체 삽입
+                'show' : function() {     // 객체 안에 함수 삽입 
+                    for(let name in this.list){
+                    document.write(name, this.list[name]+"<br />");
+                    }
+                }
+            }
+            grades.show(); //grades['show']();
+
+            // this.list는 grades안에 있는 list를 가르킴
+        </script>
+    </body>
+</html>

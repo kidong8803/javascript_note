@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+            var myapp = {}
+            myapp.calculator = {
+                'left' : null,
+                'right' : null
+            }
+            myapp.codinate = {
+                'left' : null,
+                'right' : null
+            }
+
+            myapp.calculator.left = 10;
+            myapp.calculator.right = 20;
+            function sum(){
+                return myapp.calculator.left + myapp.calculator.right;
+            }
+            document.write(sum());
+
+            //전역변수를 사용하고 싶지 않을 때 > 익명 함수 활용
+
+            (function(){
+            var myapp = {}
+            myapp.calculator = {
+                'left' : null,
+                'right' : null
+            }
+            myapp.codinate = {
+                'left' : null,
+                'right' : null
+            }
+
+            myapp.calculator.left = 10;
+            myapp.calculator.right = 20;
+            function sum(){
+                return myapp.calculator.left + myapp.calculator.right;
+            }
+            document.write(sum());
+        }())
+
+            // 방법 2 myappfn도 전역변수이므로 완전하지 않음
+            
+            function myappfn(){
+            var myapp = {}
+            myapp.calculator = {
+                'left' : null,
+                'right' : null
+            }
+            myapp.codinate = {
+                'left' : null,
+                'right' : null
+            }
+
+            myapp.calculator.left = 10;
+            myapp.calculator.right = 20;
+            function sum(){
+                return myapp.calculator.left + myapp.calculator.right;
+            }
+            document.write(sum());
+        } myappfn();
+            
+        </script>
+    </body>
+</html>

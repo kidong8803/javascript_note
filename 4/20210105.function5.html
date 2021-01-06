@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+         var i = 5
+
+         function a(){
+             var i =10;
+             b();
+         }
+
+         function b(){
+             document.write(i);
+         }
+         a(); // 결과값은 5
+
+         // b가 선언된 시점에서 전역변수 5가 실행되는 것
+         // 사용될 때가 아닌 정의될 때의 전역변수가 사용되는 것임
+
+        </script>
+    </body>
+</html>

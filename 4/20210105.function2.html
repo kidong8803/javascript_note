@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+         var vscope = 'global' ;
+           function fscope() { 
+            var vscope = 'local';
+            var lv = 'local variables' ;
+            alert(lv);
+           }
+           fscope();
+           alert(lv); // lv는 지역변수이기 때문에 함수 안에서만 접근 가능
+
+           /* var vscope = 'global' ;
+                function fscope() {
+                    var vscope = 'local' ;
+                }
+                fscope();
+                alert(vscope); 의 결과값은 'global'
+                local은 지역 변수이기 떄문에 함수 밖의 호출에서 접근 할 수 없기 때문 */
+
+                /* var vsope = 'global';
+                    function fscope() {
+                        vscope = 'local'
+                    }
+                    fscope();
+                    alert(fscope); 의 결과값은 'local'
+          
+                  
+                /* var vsope = 'global';
+                    function fscope() {
+                        var vscope = 'local';
+                        vscope = 'local'
+                    }
+                    fscope();
+                    alert(fscope); 의 결과값은 'global' 
+                    이미 var vscope으로 지역변수가 생성이 되었기 때문임
+                    밑에 vscope = 'local'은 지역변수를 할당하는 것이기 때문임 */ 
+
+
+        </script>
+    </body>
+</html>

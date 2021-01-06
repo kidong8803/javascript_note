@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script>
+          var vscope = 'global'
+          function fscope() {
+              alert(vscope) ;
+          }
+          fscope();  //결과는 global
+
+          /* 
+          var vscope = 'global' >> 전역변수
+          function fscope() {
+              var vscope = 'local'  >> 지역변수
+              alert(vscope) ;
+          }
+          fscope();  결과는 'local' */
+          
+          // 함수 안에 vscope이 정의되어 있기 때문에
+
+          
+          
+
+
+        </script>
+    </body>
+</html>

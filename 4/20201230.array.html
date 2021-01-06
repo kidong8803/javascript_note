@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+           /*let member = ['kidong', 'sanghyo', 'ilsun'];
+               alert(member);
+
+                alert(member[0]);
+                alert(member[1]);
+                alert(member[2]); 
+
+
+                <함수와 배열>
+                function get_members() {
+                    return ['kidong', 'sanghyo', 'ilsun'];
+                }
+
+                let members = get_members();
+                alert(members[0]);
+                alert(members[1]);
+                alert(members[2]);
+                alert(members.length);   // 배열안의 숫자를 표현 length
+
+
+                <toUppercase의 사용>
+                function get_friends() {
+                    return ['kidong', 'sanghyo', 'ilsun'];
+                }
+
+                let friends = get_friends();
+                document.write(friends[0].toUpperCase()+"<br />");  //소문자 > 대문자로 바꿔주는 함수
+                document.write(friends[1].toUpperCase()+"<br />");
+                document.write(friends[2].toUpperCase()+"<br />"); */
+
+                // 위의 코드들은 배열이 늘어나거나 줄어들 때 마다 배열과 코드를 추가/삭제 해야함
+                // length를 이용하여 효율적으로 작성하는 코드
+                // 이 코드는 배열에 원소만 추가하면 코드 변경없이 화면에 출력가능
+
+                function get_people(){
+                    return ['kidong','sanghyo','ilsun','paul','안녕'];
+                }
+
+                let people = get_people();
+
+                for(let i = 0; i < people.length; i++) {
+                    document.write(people[i].toUpperCase()+"<br />")
+                }
+
+                
+        </script>
+    </body>
+</html>
